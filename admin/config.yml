@@ -1,13 +1,10 @@
 # Panel de administración — Sol Naciente de Pastos Grandes
 #
-# PENDIENTE: reemplazar base_url por la URL del worker de autenticación
-# (ver https://github.com/sveltia/sveltia-cms-auth — botón "Deploy to Cloudflare Workers").
-
 backend:
   name: github
   repo: SolNacientes/sol-naciente
   branch: main
-  base_url: https://CAMBIAR-POR-TU-WORKER.workers.dev
+  base_url: https://sveltia-cms-auth.collasolnacientedepastosgrande.workers.dev
 
 media_folder: assets/uploads
 public_folder: assets/uploads
