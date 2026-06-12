@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contacto · CIC Sol Naciente de Pastos Grandes</title>
-<meta name="description" content="Escríbenos para conocer el Proyecto Herbolaria, colaborar con la comunidad o aportar al herbario de la Comunidad Indígena Colla Sol Naciente de Pastos Grandes." />
+<title>Proyecto Herbolaria · CIC Sol Naciente de Pastos Grandes</title>
+<meta name="description" content="El Proyecto Herbolaria de la Comunidad Colla Sol Naciente de Pastos Grandes: una práctica viva heredada caminando el territorio — saber, espiritualidad, recolección y preparación de las plantas medicinales de los altos de Atacama." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="contacto-body">
+<body class="herbo-page">
 
 <!-- ============ SVG defs: rising-sun mark ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -96,12 +96,12 @@
       </a>
       <ul class="nav-links">
         <li><a href="index.html#quienes">Quiénes somos</a></li>
-        <li><a href="herbolaria.html">Proyecto Herbolaria</a></li>
+        <li><a href="herbolaria.html" aria-current="page">Proyecto Herbolaria</a></li>
         <li><a href="herbario.html">Herbario</a></li>
         <li><a href="index.html#noticias">Noticias</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="contacto.html" class="btn btn-clay" aria-current="page">Contacto</a>
+        <a href="contacto.html" class="btn btn-clay">Contacto</a>
         <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
         </button>
@@ -117,7 +117,7 @@
     <button class="close" id="drawerClose" aria-label="Cerrar menú"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
   </div>
   <a href="index.html#quienes">Quiénes somos</a>
-  <a href="herbolaria.html">Proyecto Herbolaria</a>
+  <a href="herbolaria.html" aria-current="page">Proyecto Herbolaria</a>
   <a href="herbario.html">Herbario</a>
   <a href="index.html#noticias">Noticias</a>
   <a href="contacto.html">Contacto</a>
@@ -127,119 +127,254 @@
 
 <!-- ============ Page header ============ -->
 <section class="page-hero">
-  <div class="page-hero-media" aria-hidden="true"><img src="assets/contacto-hero.jpg" alt="" /></div>
+  <svg class="sun-bg" aria-hidden="true"><use href="#sol-mark"/></svg>
   <div class="wrap">
     <nav class="page-crumbs" aria-label="Migas de pan">
       <a href="index.html">Inicio</a>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
-      <span>Contacto</span>
+      <span>Proyecto Herbolaria</span>
     </nav>
-    <span class="eyebrow">Contacto</span>
-    <h1>Escríbenos</h1>
-    <p class="deck">Para conocer el Proyecto Herbolaria, colaborar con la comunidad o aportar al herbario, ponte en contacto con nosotros. Cada mensaje es recibido con la misma gratitud con que se recolectan las hierbas.</p>
+    <span class="eyebrow">Proyecto Herbolaria</span>
+    <h1>Una práctica viva,<br/>heredada caminando</h1>
+    <p class="deck">La herbolaria del pueblo Colla no se aprende en libros ni en aulas, sino acompañando a las abuelas y abuelos, reconociendo los cerros, las quebradas y los ciclos de la naturaleza. Este es el saber que la comunidad documenta para resguardarlo y transmitirlo.</p>
   </div>
 </section>
 
-<!-- ============ Contact body ============ -->
+<!-- ============ Intro ============ -->
 <section class="section">
   <div class="wrap">
-    <div class="contacto-layout">
-
-      <!-- Form -->
-      <div class="form-card reveal">
-        <form id="contactForm" action="https://formsubmit.co/collasolnacientedepastosgrande@gmail.com" method="POST">
-          <input type="hidden" name="_subject" id="formSubject" value="[Sitio] Nuevo mensaje de contacto" />
-          <input type="hidden" name="_replyto" id="formReplyto" value="" />
-          <input type="hidden" name="_next" id="formNext" value="" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <h2>Envíanos un mensaje</h2>
-          <p class="form-intro">Responderemos con el cuidado y el tiempo que merece cada conversación.</p>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="nombre">Nombre <span class="req">*</span></label>
-              <input class="input" id="nombre" name="nombre" type="text" placeholder="Tu nombre" required autocomplete="name" />
-            </div>
-            <div class="field">
-              <label for="correo">Correo <span class="req">*</span></label>
-              <input class="input" id="correo" name="correo" type="email" placeholder="tu@correo.cl" required autocomplete="email" />
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="motivo">Motivo</label>
-            <div class="select-wrap">
-              <select class="select" id="motivo" name="motivo">
-                <option value="Conocer el Proyecto Herbolaria">Conocer el Proyecto Herbolaria</option>
-                <option value="Colaborar con la comunidad">Colaborar con la comunidad</option>
-                <option value="Aportar al herbario">Aportar al herbario</option>
-                <option value="Solicitar el Manual de Herbolaria">Solicitar el Manual de Herbolaria</option>
-                <option value="Prensa o investigación">Prensa o investigación</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="mensaje">Mensaje <span class="req">*</span></label>
-            <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos acompañarnos…" required></textarea>
-          </div>
-
-          <div class="form-actions">
-            <button type="submit" class="btn btn-clay btn-submit">Enviar mensaje
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-            </button>
-            <span class="form-note" style="margin:0">Los campos con <span class="req">*</span> son obligatorios.</span>
-          </div>
-          <p class="form-note">Tu mensaje se enviará directamente a la casilla de la comunidad.</p>
-        </form>
-
-        <!-- Success state -->
-        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
-          <div class="tick">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          </div>
-          <h3>Gracias por escribir</h3>
-          <p>Tu mensaje fue enviado. Te responderemos pronto, desde los altos de Pastos Grandes.</p>
-        </div>
+    <div class="herbo-intro">
+      <div class="reveal">
+        <span class="eyebrow" style="margin-bottom:22px">Introducción</span>
+        <p class="lead"><span class="drop">En un territorio marcado por la altura, la aridez y los contrastes,</span> el conocimiento sobre las plantas medicinales ha sido fundamental para el cuidado de la salud, la alimentación y el equilibrio espiritual de la comunidad.</p>
+        <p class="body">Cada hierba tiene su tiempo, su lugar y su forma correcta de ser recolectada y utilizada, y ese saber se transmite con respeto y responsabilidad. Las plantas no son entidades aisladas, sino parte de un entramado de relaciones que incluye al suelo, al agua, a los animales, al clima y a las personas. Comprender la herbolaria Colla implica comprender el territorio en su totalidad.</p>
       </div>
-
-      <!-- Info -->
-      <aside class="info-stack reveal">
-        <div class="info-card">
-          <div class="info-head">Datos de contacto</div>
-          <div class="info-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            <div><div class="label">Correo</div><a class="val" href="mailto:collasolnacientedepastosgrande@gmail.com">collasolnacientedepastosgrande@gmail.com</a></div>
-          </div>
-          <div class="info-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.4-7-11a7 7 0 1 1 14 0c0 4.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-            <div><div class="label">Territorio</div><div class="val">Pastos Grandes · Atacama · Chile</div></div>
-          </div>
-          <div class="info-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/></svg>
-            <div><div class="label">Comunidad</div><div class="val">CIC Sol Naciente de Pastos Grandes</div></div>
-          </div>
-        </div>
-
-        <div class="help-card">
-          <span class="eyebrow">Antes de escribir</span>
-          <p>Si tu interés es <strong>aportar al herbario</strong>, cuéntanos el nombre común de la planta, dónde crece y su uso tradicional. Cada saber suma a la cartografía viva.</p>
-          <p>Para <strong>prensa o investigación</strong>, indícanos la institución y el propósito del contacto.</p>
-        </div>
+      <aside class="etica-note reveal">
+        <span class="label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9.5 12l1.8 1.8 3.2-3.6"/></svg>
+          Advertencia ética
+        </span>
+        <p>El conocimiento de este manual pertenece a la Comunidad Indígena Colla Sol Naciente de Pastos Grandes y a su propiedad intelectual colectiva. No puede ser utilizado con fines comerciales sin la autorización expresa de sus autoridades tradicionales y comunitarias.</p>
       </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Narrative features ============ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">El saber y su transmisión</span>
+      <h2>Cómo vive el conocimiento del monte</h2>
+    </div>
+
+    <div class="herbo-features">
+
+      <!-- 01 -->
+      <article class="herbo-feature reveal">
+        <div class="herbo-text">
+          <span class="herbo-num">01</span>
+          <h2>Aprender caminando</h2>
+          <p class="herbo-body">El conocimiento sobre las plantas no se aprende sentado tomando nota: se adquiere en movimiento. Acompañando a los mayores en la cordillera, arreando los animales, subiendo la quebrada, de pronto alguien se detiene, señala con la mano y dice: <em>ahí está</em>. Se reconoce una planta porque se la ha visto muchas veces, porque alguien la nombró antes. Hoy son principalmente las mujeres quienes guardan este saber y lo enseñan, transmitido por la línea materna.</p>
+          <blockquote class="quote-inline">
+            <p>“Ese conocimiento lo va adquiriendo uno a medida que van pasando los años.”</p>
+            <cite>Socio de la comunidad, mayor de 60</cite>
+          </blockquote>
+        </div>
+        <figure class="herbo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 19 6-9 4 5 2-3 6 7z"/><circle cx="17" cy="6" r="2"/></svg></span>
+            <span class="ps-cap">Trashumancia en la cordillera</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+      </article>
+
+      <!-- 02 -->
+      <article class="herbo-feature reverse reveal">
+        <div class="herbo-text">
+          <span class="herbo-num">02</span>
+          <h2>Saber vivido</h2>
+          <p class="herbo-body">Crecer en Pastos Grandes es crecer con monte. Las infusiones y los baños no son excepción ni emergencia: son parte del día a día, buscando equilibrar la salud del cuerpo y el espíritu. Conocer el territorio donde vives es autonomía — no depender de la distancia, la farmacia ni un traslado que muchas veces no es inmediato. No es una oposición entre medicina natural y occidental: es experiencia vivida. Cuando el monte funciona, se confía en él.</p>
+          <blockquote class="quote-inline">
+            <p>“Uno puede autocurarse sin tener que viajar por medicinas.”</p>
+            <cite>Estudiante, 15 años</cite>
+          </blockquote>
+        </div>
+        <figure class="herbo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l-1 5H7zM7 8c-2 4-2 9 0 13h7c2-4 2-9 0-13"/><path d="M9 13h3"/></svg></span>
+            <span class="ps-cap">Bolsa con hierbas secas</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+      </article>
+
+      <!-- 03 -->
+      <article class="herbo-feature reveal">
+        <div class="herbo-text">
+          <span class="herbo-num">03</span>
+          <h2>Las plantas no solo curan el cuerpo</h2>
+          <p class="herbo-body">El monte también limpia, protege y ordena lo invisible. La salvia no es solo una infusión para el resfrío: seca y puesta sobre brasas, su humo acompaña las ceremonias, pasando por cada persona presente. Al comienzo se pide a los ancestros y se agradece a la Madre Tierra, la hermana lluvia, el Padre Sol y los cerros guardianes. La espiritualidad no está separada de la medicina: la misma planta circula entre lo corporal y lo espiritual sin contradicción.</p>
+          <blockquote class="quote-inline">
+            <p>“El sahumerio es una limpieza espiritual que sirve para relajar, proteger y recibir buenas energías.”</p>
+            <cite>Guía espiritual de la comunidad</cite>
+          </blockquote>
+        </div>
+        <figure class="herbo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.5 2-1.5 3 0 5M9 13h6l-1 7H10zM7 13c-1-2 0-3 2-3h6c2 0 3 1 2 3"/></svg></span>
+            <span class="ps-cap">Hierbas sobre el carbón · sahumerio</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+      </article>
+
+      <!-- 04 -->
+      <article class="herbo-feature reverse reveal">
+        <div class="herbo-text">
+          <span class="herbo-num">04</span>
+          <h2>Recolectar no es extraer</h2>
+          <p class="herbo-body">Ir al monte no es ir a sacar algo, sino encontrarse con algo que ya estaba y seguirá estando después. Las plantas nunca se arrancan de raíz: se toman solo las partes de arriba, lo necesario para el momento, y se vuelve cuando han crecido otra vez. Las de altura se recolectan en verano, cuando se puede subir y están más verdes. Recolectar supone equilibrio; extraer sin límite —la minería, el polvo de los camiones— lo rompe.</p>
+          <blockquote class="quote-inline">
+            <p>“No se saca mucho, se saca lo necesario, porque si uno arranca todo después no queda nada para el otro año.”</p>
+            <cite>Socio de la comunidad, mayor de 60</cite>
+          </blockquote>
+        </div>
+        <figure class="herbo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 20 18M8.5 15.5 20 6"/></svg></span>
+            <span class="ps-cap">Tijera cortando una rama con cuidado</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+      </article>
 
     </div>
   </div>
 </section>
 
-<!-- ============ Closing strip ============ -->
-<section class="section closing" style="padding-block: clamp(56px,8vh,96px)">
-  <svg class="sun-bg" aria-hidden="true"><use href="#iso-colla"/></svg>
+<!-- ============ Métodos de preparación ============ -->
+<section class="section">
   <div class="wrap">
-    <span class="eyebrow reveal">Resistencia y ternura</span>
-    <h2 class="reveal" style="font-size:clamp(28px,4.4vw,54px);max-width:18ch">Cuidar la tierra es también un derecho a seguir habitándola</h2>
+    <div class="section-head reveal">
+      <span class="eyebrow">Los montes y sus usos</span>
+      <h2>Métodos de preparación</h2>
+      <p class="deck">No existen fórmulas únicas: cada planta tiene distintos usos según la parte que se utilice y su preparación. Hay criterio, respeto, observación, prueba y memoria.</p>
+    </div>
+
+    <div class="metodos-grid">
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h11v3a5.5 5.5 0 0 1-11 0z"/><path d="M16 9h2.5a2 2 0 0 1 0 4H16"/><path d="M8 5c0-1 .8-1.4.8-2.4M12 5c0-1 .8-1.4.8-2.4"/></svg></span>
+            <span class="ps-cap">Preparación de infusión</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Infusión</h3>
+          <p>Se vierte agua caliente sobre hojas, flores o tallos. Se bebe o se usa para lavar zonas externas del cuerpo, siempre fresca y nunca muy cargada, por respeto al poder de cada hierba.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Bailahuén, chachacoma</span>
+        </div>
+      </article>
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16l-1.2 7.5a2 2 0 0 1-2 1.5H7.2a2 2 0 0 1-2-1.5z"/><path d="M3 11h18M9 7c0-1 .8-1.4.8-2.4M15 7c0-1 .8-1.4.8-2.4"/></svg></span>
+            <span class="ps-cap">Decocción en olla</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Decocción</h3>
+          <p>Se hierven las partes duras —raíces, cortezas, semillas o tallos leñosos— de 5 a 20 minutos. Cada vez que se va a usar se hierve fresca: guardada, pierde su efecto con el tiempo.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Cortezas y tallos</span>
+        </div>
+      </article>
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M4 16c2 2 5 3 8 3s6-1 8-3"/></svg></span>
+            <span class="ps-cap">Cataplasma sobre la piel</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Cataplasma</h3>
+          <p>Hierba triturada o cocida, aplicada caliente sobre la piel y envuelta en un paño. Calma dolores, inflamaciones e infecciones — como la pata de perdiz para dolores reumáticos.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Pata de perdiz, salvia</span>
+        </div>
+      </article>
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11h10v3a5 5 0 0 1-10 0z"/><path d="M9 7c0-1.2 1-1.6 1-3M14 7c0-1.2 1-1.6 1-3"/></svg></span>
+            <span class="ps-cap">Baño de vapor y de asiento</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Baño de vapor</h3>
+          <p>La salvia hervida libera un vapor que despeja el pecho — el paño sobre la cabeza, aguantando el calor. También baños de inmersión y de asiento con bailahuén para músculos y riñones.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Salvia, bailahuén</span>
+        </div>
+      </article>
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 2.2-1.5 3.3 0 5.5M10 14h4l-.8 6h-2.4zM7.5 14c-1-2.2.4-3.2 2.5-3.2h4c2.1 0 3.5 1 2.5 3.2"/></svg></span>
+            <span class="ps-cap">Sahumerio doméstico</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Sahumerio</h3>
+          <p>Atados de hierbas secas quemados sobre brasas. El humo limpia energías, armoniza espacios y personas, y abre las ceremonias pidiendo permiso y protección a la Pachamama.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Salvia seca</span>
+        </div>
+      </article>
+
+      <article class="metodo reveal">
+        <figure class="metodo-figure photo-slot">
+          <div class="ps-inner">
+            <span class="ps-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8h8v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"/><path d="M9.5 8V5.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V8M10 13h4"/></svg></span>
+            <span class="ps-cap">Pomada herbal en frasco</span>
+            <span class="ps-hint">Espacio para fotografía</span>
+          </div>
+        </figure>
+        <div class="metodo-body">
+          <h3>Pomada</h3>
+          <p>Flores y extractos cocidos en una base grasa neutra con aceites, como el de oliva. La escasa flor del caspiche se convierte en crema para las heridas.</p>
+          <span class="via"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>Flor de caspiche</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ Closing band ============ -->
+<section class="section section-deep">
+  <div class="wrap">
+    <div class="manifesto-quote reveal">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <div>
+        <blockquote>Y mientras alguien recuerde cómo raspar y hervir la corteza del caspiche para curar una herida, el monte seguirá siendo más que paisaje pasivo: será memoria activa.</blockquote>
+        <cite>Manual de Herbolaria · Sol Naciente de Pastos Grandes</cite>
+      </div>
+    </div>
+    <div style="margin-top:48px;display:flex;gap:14px;flex-wrap:wrap" class="reveal">
+      <a href="herbario.html" class="btn btn-clay">Ver el herbario completo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="contacto.html" class="btn btn-ghost-deep">Solicitar el manual</a>
+    </div>
   </div>
 </section>
 
@@ -256,28 +391,6 @@
 </footer>
 
 <script src="app.js"></script>
-<script>
-// Contact form — posts directly to the community inbox via FormSubmit.
-(function () {
-  var form = document.getElementById("contactForm");
-  var success = document.getElementById("formSuccess");
-  if (!form) return;
-
-  // Returning from a successful send: show the success state.
-  if (new URLSearchParams(window.location.search).get("enviado") === "1") {
-    form.style.display = "none";
-    success.classList.add("show");
-  }
-
-  form.addEventListener("submit", function () {
-    document.getElementById("formSubject").value =
-      "[Sitio] " + form.motivo.value + " — " + form.nombre.value.trim();
-    document.getElementById("formReplyto").value = form.correo.value.trim();
-    document.getElementById("formNext").value =
-      window.location.origin + window.location.pathname + "?enviado=1";
-  });
-})();
-</script>
 
 </body>
 </html>
