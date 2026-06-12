@@ -1,0 +1,39 @@
+# Panel de administración — Sol Naciente de Pastos Grandes
+#
+# PENDIENTE tras crear el repositorio en GitHub:
+#   1. Reemplazar "USUARIO/REPO" por el repositorio real (ej: crisacuna/sol-naciente).
+#   2. Reemplazar base_url por la URL del worker de autenticación
+#      (ver https://github.com/sveltia/sveltia-cms-auth — botón "Deploy to Cloudflare Workers").
+
+backend:
+  name: github
+  repo: USUARIO/REPO
+  branch: main
+  base_url: https://CAMBIAR-POR-TU-WORKER.workers.dev
+
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+site_url: /
+display_url: /
+
+collections:
+  - name: noticias
+    label: Noticias
+    description: Las tarjetas de la sección "Voces del territorio" del home.
+    files:
+      - name: lista
+        label: Lista de noticias
+        file: content/noticias.json
+        fields:
+          - name: items
+            label: Noticias
+            label_singular: noticia
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: fecha, label: Fecha, widget: string, hint: "Ej: 12 de junio, 2026" }
+              - { name: imagen, label: Imagen, widget: image }
+              - { name: resumen, label: Resumen, widget: text }
+              - { name: enlace, label: "Enlace (opcional)", widget: string, required: false, hint: "URL de la nota completa, si existe" }

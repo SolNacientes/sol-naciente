@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "titulo": "Jornada de recolección y traspaso de saberes",
+      "fecha": "Próximamente",
+      "imagen": "assets/news-1.jpg",
+      "resumen": "Mayores y jóvenes recorren las quebradas reconociendo plantas medicinales según su tiempo de floración.",
+      "enlace": ""
+    },
+    {
+      "titulo": "Avances del Manual de Herbolaria Colla",
+      "fecha": "Próximamente",
+      "imagen": "assets/news-2.jpg",
+      "resumen": "La comunidad sistematiza hábitat, tiempos y nombres de las especies del territorio de Pastos Grandes.",
+      "enlace": ""
+    },
+    {
+      "titulo": "Cuidado del agua en los altos de Atacama",
+      "fecha": "Próximamente",
+      "imagen": "assets/news-3.jpg",
+      "resumen": "El resguardo de vertientes y vegas como acto cotidiano de permanencia en el territorio.",
+      "enlace": ""
+    }
+  ]
+}
