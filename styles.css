@@ -615,6 +615,13 @@ section { position: relative; }
 }
 .closing p { margin: 30px auto 0; max-width: 56ch; font-size: clamp(17px, 2vw, 21px); color: #f6e3d8; }
 .closing .sun-bg { position: absolute; left: 50%; bottom: -18%; transform: translateX(-50%); width: min(120vw, 1000px); aspect-ratio: 1124/670; opacity: 0.13; z-index: 1; }
+.closing.closing-photo .closing-media { position: absolute; inset: 0; z-index: 0; }
+.closing.closing-photo .closing-media img { width: 100%; height: 100%; object-fit: cover; }
+.closing.closing-photo::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(122,55,33,0.86) 0%, rgba(122,55,33,0.72) 50%, rgba(122,55,33,0.88) 100%);
+}
 
 /* ============================================================
    Contact + footer
@@ -1067,7 +1074,7 @@ section { position: relative; }
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 .metodo:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.metodo .metodo-figure { aspect-ratio: 4 / 3; border-radius: 0; }
+.metodo .metodo-figure { aspect-ratio: 4 / 3; border-radius: 8px; }
 .metodo .metodo-body { padding: 22px 24px 26px; display: flex; flex-direction: column; flex: 1; }
 .metodo h3 { font-size: 22px; letter-spacing: 0.03em; margin-bottom: 10px; }
 .metodo p { font-size: 14.5px; line-height: 1.55; color: var(--fg-3); margin: 0; }
